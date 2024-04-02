@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Conversor Do Dólar</h1>
+    </header>
+    <main>
+        <form id="form">
+            <section class="inputs-container">
+                <div class="form-croup">
+                    <label for="value-real">Valor a ser convertido (R$)</label>
+                    <input type="number"
+                    placeholder="R$20,00"
+                    id="value-real"
+                    name="valuer-real"
+                    max="1000000"
+                    >
+                </div>
+
+                <div class="form-croup">
+                    <label for="">Escolha a moeda</label>
+                    <select id="currency">
+                        <option value="">Selecione...</option>
+                        <option value="dol">Dólar</option>
+                    </select>
+
+                </div>
+            </section>
+            <button type="submit">Converter</button>
+        </form>
+        <h2 id="result"></h2>
+    </main>
+
+    <input type="checkbox" name="#" id="toggle" class="toggle-btn">
+    <label for="toggle" class="toggle-label"></label>
+
+    <footer>
+        <p>
+            Desenvolvido Por Matheus Alessandro | 2024 &copy;
+        </p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
